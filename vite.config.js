@@ -7,5 +7,6 @@ export default defineConfig({
   base: "/vite-myProject/", // Укажите имя репозитория
   build: {
     outDir: "dist",
-  }
+  },
+  port: 5173,
 });
