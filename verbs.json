@@ -1,0 +1,788 @@
+[
+    {
+    "infinitive": "backen",
+    "prateritumForm": "buk",
+    "perfektForm": "hat gebacken",
+    "translate": "печь"
+    },
+    {
+    "infinitive": "befehlen",
+    "prateritumForm": "befahl",
+    "perfektForm": "hat befohlen",
+    "translate": "приказывать"
+    },
+    {
+    "infinitive": "beginnen",
+    "prateritumForm": "begann",
+    "perfektForm": "hat begonnen",
+    "translate": "начинать"
+    },
+    {
+    "infinitive": "beißen",
+    "prateritumForm": "biss",
+    "perfektForm": "hat gebissen",
+    "translate": "кусать"
+    },
+    {
+    "infinitive": "bergen",
+    "prateritumForm": "barg",
+    "perfektForm": "hat geborgen",
+    "translate": "спасать, извлекать"
+    },
+    {
+    "infinitive": "bersten",
+    "prateritumForm": "barst",
+    "perfektForm": "ist geborsten",
+    "translate": "лопаться"
+    },
+    {
+    "infinitive": "biegen",
+    "prateritumForm": "bog",
+    "perfektForm": "hat gebogen",
+    "translate": "гнуть"
+    },
+    {
+    "infinitive": "bieten",
+    "prateritumForm": "bot",
+    "perfektForm": "hat geboten",
+    "translate": "предлагать"
+    },
+    {
+    "infinitive": "binden",
+    "prateritumForm": "band",
+    "perfektForm": "hat gebunden",
+    "translate": "связывать"
+    },
+    {
+    "infinitive": "bitten",
+    "prateritumForm": "bat",
+    "perfektForm": "hat gebeten",
+    "translate": "просить"
+    },
+    {
+    "infinitive": "blasen",
+    "prateritumForm": "blies",
+    "perfektForm": "hat geblasen",
+    "translate": "дуть"
+    },
+    {
+    "infinitive": "empfangen",
+    "prateritumForm": "empfing",
+    "perfektForm": "hat empfangen",
+    "translate": "получать"
+    },
+    {
+    "infinitive": "empfehlen",
+    "prateritumForm": "empfahl",
+    "perfektForm": "hat empfohlen",
+    "translate": "рекомендовать"
+    },
+    {
+    "infinitive": "erlöschen",
+    "prateritumForm": "erlosch",
+    "perfektForm": "ist erloschen",
+    "translate": "гаснуть"
+    },
+    {
+    "infinitive": "erschrecken",
+    "prateritumForm": "erschrak",
+    "perfektForm": "ist erschrocken",
+    "translate": "пугаться"
+    },
+    {
+    "infinitive": "essen",
+    "prateritumForm": "aß",
+    "perfektForm": "hat gegessen",
+    "translate": "есть"
+    },
+    {
+    "infinitive": "fahren",
+    "prateritumForm": "fuhr",
+    "perfektForm": "ist/hat gefahren",
+    "translate": "ехать, водить"
+    },
+    {
+    "infinitive": "fallen",
+    "prateritumForm": "fiel",
+    "perfektForm": "ist gefallen",
+    "translate": "падать"
+    },
+    {
+    "infinitive": "fangen",
+    "prateritumForm": "fing",
+    "perfektForm": "hat gefangen",
+    "translate": "ловить"
+    },
+    {
+    "infinitive": "fechten",
+    "prateritumForm": "focht",
+    "perfektForm": "hat gefochten",
+    "translate": "фехтовать"
+    },
+    {
+    "infinitive": "finden",
+    "prateritumForm": "fand",
+    "perfektForm": "hat gefunden",
+    "translate": "находить"
+    },
+    {
+    "infinitive": "flechten",
+    "prateritumForm": "flocht",
+    "perfektForm": "hat geflochten",
+    "translate": "плести"
+    },
+    {
+    "infinitive": "fliegen",
+    "prateritumForm": "flog",
+    "perfektForm": "ist geflogen",
+    "translate": "летать"
+    },
+    {
+    "infinitive": "fliehen",
+    "prateritumForm": "floh",
+    "perfektForm": "ist geflohen",
+    "translate": "бежать"
+    },
+    {
+    "infinitive": "fließen",
+    "prateritumForm": "floss",
+    "perfektForm": "ist geflossen",
+    "translate": "течь"
+    },
+    {
+    "infinitive": "fressen",
+    "prateritumForm": "fraß",
+    "perfektForm": "hat gefressen",
+    "translate": "жрать (о животных)"
+    },
+    {
+    "infinitive": "frieren",
+    "prateritumForm": "fror",
+    "perfektForm": "hat gefroren",
+    "translate": "мёрзнуть"
+    },
+    {
+    "infinitive": "gären",
+    "prateritumForm": "gor",
+    "perfektForm": "hat gegoren",
+    "translate": "бродить (о вине)"
+    },
+    {
+    "infinitive": "gebären",
+    "prateritumForm": "gebar",
+    "perfektForm": "hat geboren",
+    "translate": "рожать"
+    },
+    {
+    "infinitive": "geben",
+    "prateritumForm": "gab",
+    "perfektForm": "hat gegeben",
+    "translate": "давать"
+    },
+    {
+    "infinitive": "gedeihen",
+    "prateritumForm": "gedieh",
+    "perfektForm": "ist gediehen",
+    "translate": "процветать, быть в благосостоянии"
+    },
+    {
+    "infinitive": "gehen",
+    "prateritumForm": "ging",
+    "perfektForm": "ist gegangen",
+    "translate": "идти"
+    },
+    {
+    "infinitive": "gelingen",
+    "prateritumForm": "gelang",
+    "perfektForm": "ist gelungen",
+    "translate": "удаваться, удаться"
+    },
+    {
+    "infinitive": "gelten",
+    "prateritumForm": "galt",
+    "perfektForm": "hat gegolten",
+    "translate": "иметь силу, быть действительным"
+    },
+    {
+    "infinitive": "genesen",
+    "prateritumForm": "genas",
+    "perfektForm": "ist genesen",
+    "translate": "выздоравливать"
+    },
+    {
+    "infinitive": "genießen",
+    "prateritumForm": "genoss",
+    "perfektForm": "hat genossen",
+    "translate": "наслаждаться"
+    },
+    {
+    "infinitive": "geschehen",
+    "prateritumForm": "geschah",
+    "perfektForm": "ist geschehen",
+    "translate": "происходить"
+    },
+    {
+    "infinitive": "gewinnen",
+    "prateritumForm": "gewann",
+    "perfektForm": "hat gewonnen",
+    "translate": "выигрывать"
+    },
+    {
+    "infinitive": "gießen",
+    "prateritumForm": "goss",
+    "perfektForm": "hat gegossen",
+    "translate": "лить"
+    },
+    {
+    "infinitive": "fliegen",
+    "prateritumForm": "flog",
+    "perfektForm": "ist geflogen",
+    "translate": "летать"
+    },
+    {
+    "infinitive": "fliehen",
+    "prateritumForm": "floh",
+    "perfektForm": "ist geflohen",
+    "translate": "бежать"
+    },
+    {
+    "infinitive": "fließen",
+    "prateritumForm": "floss",
+    "perfektForm": "ist geflossen",
+    "translate": "течь"
+    },
+    {
+    "infinitive": "fressen",
+    "prateritumForm": "fraß",
+    "perfektForm": "hat gefressen",
+    "translate": "жрать (о животных)"
+    },
+    {
+    "infinitive": "frieren",
+    "prateritumForm": "fror",
+    "perfektForm": "hat gefroren",
+    "translate": "мёрзнуть"
+    },
+    {
+    "infinitive": "gären",
+    "prateritumForm": "gor",
+    "perfektForm": "hat gegoren",
+    "translate": "бродить (о вине)"
+    },
+    {
+    "infinitive": "gebären",
+    "prateritumForm": "gebar",
+    "perfektForm": "hat geboren",
+    "translate": "рожать"
+    },
+    {
+    "infinitive": "geben",
+    "prateritumForm": "gab",
+    "perfektForm": "hat gegeben",
+    "translate": "давать"
+    },
+    {
+    "infinitive": "gedeihen",
+    "prateritumForm": "gedieh",
+    "perfektForm": "ist gediehen",
+    "translate": "процветать, быть в благосостоянии"
+    },
+    {
+    "infinitive": "gehen",
+    "prateritumForm": "ging",
+    "perfektForm": "ist gegangen",
+    "translate": "идти"
+    },
+    {
+    "infinitive": "gelingen",
+    "prateritumForm": "gelang",
+    "perfektForm": "ist gelungen",
+    "translate": "удаваться, удаться"
+    },
+    {
+    "infinitive": "gelten",
+    "prateritumForm": "galt",
+    "perfektForm": "hat gegolten",
+    "translate": "иметь силу, быть действительным"
+    },
+    {
+    "infinitive": "genesen",
+    "prateritumForm": "genas",
+    "perfektForm": "ist genesen",
+    "translate": "выздоравливать"
+    },
+    {
+    "infinitive": "genießen",
+    "prateritumForm": "genoss",
+    "perfektForm": "hat genossen",
+    "translate": "наслаждаться"
+    },
+    {
+    "infinitive": "geschehen",
+    "prateritumForm": "geschah",
+    "perfektForm": "ist geschehen",
+    "translate": "происходить"
+    },
+    {
+    "infinitive": "gewinnen",
+    "prateritumForm": "gewann",
+    "perfektForm": "hat gewonnen",
+    "translate": "выигрывать"
+    },
+    {
+    "infinitive": "gießen",
+    "prateritumForm": "goss",
+    "perfektForm": "hat gegossen",
+    "translate": "лить"
+    },
+    {
+    "infinitive": "gleichen",
+    "prateritumForm": "glich",
+    "perfektForm": "hat geglichen",
+    "translate": "походить, быть похожим"
+    },
+    {
+    "infinitive": "gleiten",
+    "prateritumForm": "glitt",
+    "perfektForm": "ist geglitten",
+    "translate": "скользить"
+    },
+    {
+    "infinitive": "graben",
+    "prateritumForm": "grub",
+    "perfektForm": "hat gegraben",
+    "translate": "копать"
+    },
+    {
+    "infinitive": "greifen",
+    "prateritumForm": "griff",
+    "perfektForm": "hat gegriffen",
+    "translate": "хватать, брать"
+    },
+    {
+    "infinitive": "haben",
+    "prateritumForm": "hatte",
+    "perfektForm": "hat gehabt",
+    "translate": "иметь"
+    },
+    {
+    "infinitive": "halten",
+    "prateritumForm": "hielt",
+    "perfektForm": "hat gehalten",
+    "translate": "держать"
+    },
+    {
+    "infinitive": "hängen",
+    "prateritumForm": "hing",
+    "perfektForm": "hat gehangen",
+    "translate": "висеть"
+    },
+    {
+    "infinitive": "hauen",
+    "prateritumForm": "hieb",
+    "perfektForm": "hat gehauen",
+    "translate": "рубить"
+    },
+    {
+    "infinitive": "heben",
+    "prateritumForm": "hob",
+    "perfektForm": "hat gehoben",
+    "translate": "поднимать"
+    },
+    {
+    "infinitive": "heißen",
+    "prateritumForm": "hieß",
+    "perfektForm": "hat geheißen",
+    "translate": "звать, называть"
+    },
+    {
+    "infinitive": "helfen",
+    "prateritumForm": "half",
+    "perfektForm": "hat geholfen",
+    "translate": "помогать"
+    },
+    {
+    "infinitive": "kennen",
+    "prateritumForm": "kannte",
+    "perfektForm": "hat gekannt",
+    "translate": "знать, быть знакомым"
+    },
+    {
+    "infinitive": "klingen",
+    "prateritumForm": "klang",
+    "perfektForm": "hat geklungen",
+    "translate": "звучать"
+    },
+    {
+    "infinitive": "kneifen",
+    "prateritumForm": "kneifte",
+    "perfektForm": "hat gekneift",
+    "translate": "щипать, ущипнуть"
+    },
+    {
+    "infinitive": "kommen",
+    "prateritumForm": "kam",
+    "perfektForm": "ist gekommen",
+    "translate": "приходить, приезжать"
+    },
+    {
+    "infinitive": "können",
+    "prateritumForm": "konnte",
+    "perfektForm": "hat gekonnt",
+    "translate": "мочь"
+    },
+    {
+    "infinitive": "kriechen",
+    "prateritumForm": "kroch",
+    "perfektForm": "ist gekrochen",
+    "translate": "ползти"
+    },
+    {
+    "infinitive": "laden",
+    "prateritumForm": "lud",
+    "perfektForm": "hat geladen",
+    "translate": "грузить"
+    },
+    {
+    "infinitive": "lassen",
+    "prateritumForm": "ließ",
+    "perfektForm": "hat gelassen",
+    "translate": "позволять, оставлять"
+    },
+    {
+    "infinitive": "laufen",
+    "prateritumForm": "lief",
+    "perfektForm": "ist gelaufen",
+    "translate": "бежать, ходить"
+    },
+    {
+    "infinitive": "leiden",
+    "prateritumForm": "litt",
+    "perfektForm": "hat gelitten",
+    "translate": "страдать"
+    },
+    {
+    "infinitive": "leihen",
+    "prateritumForm": "lieh",
+    "perfektForm": "hat geliehen",
+    "translate": "давать в долг, брать в долг"
+    },
+    {
+    "infinitive": "lesen",
+    "prateritumForm": "las",
+    "perfektForm": "hat gelesen",
+    "translate": "читать"
+    },
+    {
+    "infinitive": "liegen",
+    "prateritumForm": "lag",
+    "perfektForm": "hat gelegen",
+    "translate": "лежать"
+    },
+    {
+    "infinitive": "lügen",
+    "prateritumForm": "log",
+    "perfektForm": "hat gelogen",
+    "translate": "лгать"
+    },
+    {
+    "infinitive": "messen",
+    "prateritumForm": "maß",
+    "perfektForm": "hat gemessen",
+    "translate": "мерить"
+    },
+    {
+    "infinitive": "misslingen",
+    "prateritumForm": "misslang",
+    "perfektForm": "ist misslungen",
+    "translate": "не удаваться"
+    },
+    {
+    "infinitive": "mögen",
+    "prateritumForm": "mochte",
+    "perfektForm": "hat gemocht",
+    "translate": "любить (в значении нравиться)"
+    },
+    {
+    "infinitive": "müssen",
+    "prateritumForm": "musste",
+    "perfektForm": "hat gemusst",
+    "translate": "долженствовать, быть обязанным"
+    },
+    {
+    "infinitive": "nehmen",
+    "prateritumForm": "nahm",
+    "perfektForm": "hat genommen",
+    "translate": "брать"
+    },
+    {
+    "infinitive": "nennen",
+    "prateritumForm": "nannte",
+    "perfektForm": "hat genannt",
+    "translate": "называть"
+    },
+    {
+    "infinitive": "pfeifen",
+    "prateritumForm": "pfiff",
+    "perfektForm": "hat gepfiffen",
+    "translate": "свистеть"
+    },
+    {
+    "infinitive": "preisen",
+    "prateritumForm": "pries",
+    "perfektForm": "hat gepriesen",
+    "translate": "восхвалять"
+    },
+    {
+    "infinitive": "reiten",
+    "prateritumForm": "ritt",
+    "perfektForm": "ist geritten",
+    "translate": "ездить верхом"
+    },
+    {
+    "infinitive": "rennen",
+    "prateritumForm": "rannte",
+    "perfektForm": "ist gerannt",
+    "translate": "бежать, мчаться"
+    },
+    {
+    "infinitive": "riechen",
+    "prateritumForm": "roch",
+    "perfektForm": "hat gerochen",
+    "translate": "пахнуть"
+    },
+    {
+    "infinitive": "rufen",
+    "prateritumForm": "rief",
+    "perfektForm": "hat gerufen",
+    "translate": "звать, вызывать"
+    },
+    {
+    "infinitive": "saufen",
+    "prateritumForm": "soff",
+    "perfektForm": "hat gesoffen",
+    "translate": "пить (о животных)"
+    },
+    {
+    "infinitive": "schenken",
+    "prateritumForm": "schenkte",
+    "perfektForm": "hat geschenkt",
+    "translate": "дарить"
+    },
+    {
+    "infinitive": "schlafen",
+    "prateritumForm": "schlief",
+    "perfektForm": "hat geschlafen",
+    "translate": "спать"
+    },
+    {
+    "infinitive": "schlagen",
+    "prateritumForm": "schlug",
+    "perfektForm": "hat geschlagen",
+    "translate": "ударять"
+    },
+    {
+    "infinitive": "schließen",
+    "prateritumForm": "schloss",
+    "perfektForm": "hat geschlossen",
+    "translate": "закрывать"
+    },
+    {
+    "infinitive": "schneiden",
+    "prateritumForm": "schnitt",
+    "perfektForm": "hat geschnitten",
+    "translate": "резать"
+    },
+    {
+    "infinitive": "schreiben",
+    "prateritumForm": "schrieb",
+    "perfektForm": "hat geschrieben",
+    "translate": "писать"
+    },
+    {
+    "infinitive": "sehen",
+    "prateritumForm": "sah",
+    "perfektForm": "hat gesehen",
+    "translate": "видеть"
+    },
+    {
+    "infinitive": "sein",
+    "prateritumForm": "war",
+    "perfektForm": "ist gewesen",
+    "translate": "быть"
+    },
+    {
+    "infinitive": "singen",
+    "prateritumForm": "sang",
+    "perfektForm": "hat gesungen",
+    "translate": "петь"
+    },
+    {
+    "infinitive": "sitzen",
+    "prateritumForm": "saß",
+    "perfektForm": "hat gesessen",
+    "translate": "сидеть"
+    },
+    {
+    "infinitive": "sprechen",
+    "prateritumForm": "sprach",
+    "perfektForm": "hat gesprochen",
+    "translate": "говорить"
+    },
+    {
+    "infinitive": "springen",
+    "prateritumForm": "sprang",
+    "perfektForm": "ist gesprungen",
+    "translate": "прыгать"
+    },
+    {
+    "infinitive": "stechen",
+    "prateritumForm": "stach",
+    "perfektForm": "hat gestochen",
+    "translate": "колоть"
+    },
+    {
+    "infinitive": "steigen",
+    "prateritumForm": "stieg",
+    "perfektForm": "ist gestiegen",
+    "translate": "восходить, подниматься"
+    },
+    {
+    "infinitive": "stehlen",
+    "prateritumForm": "stahl",
+    "perfektForm": "hat gestohlen",
+    "translate": "красть"
+    },
+    {
+    "infinitive": "stinken",
+    "prateritumForm": "stank",
+    "perfektForm": "hat gestunken",
+    "translate": "вонять"
+    },
+    {
+    "infinitive": "stoßen",
+    "prateritumForm": "stieß",
+    "perfektForm": "hat gestoßen",
+    "translate": "толкать, ударять"
+    },
+    {
+    "infinitive": "streichen",
+    "prateritumForm": "strich",
+    "perfektForm": "hat gestrichen",
+    "translate": "гладить, красить"
+    },
+    {
+    "infinitive": "streiten",
+    "prateritumForm": "stritt",
+    "perfektForm": "hat gestritten",
+    "translate": "ссориться"
+    },
+    {
+    "infinitive": "tragen",
+    "prateritumForm": "trug",
+    "perfektForm": "hat getragen",
+    "translate": "носить"
+    },
+    {
+    "infinitive": "treffen",
+    "prateritumForm": "traf",
+    "perfektForm": "hat getroffen",
+    "translate": "встретить"
+    },
+    {
+    "infinitive": "treiben",
+    "prateritumForm": "trieb",
+    "perfektForm": "hat getrieben",
+    "translate": "заниматься (спортом), гнать"
+    },
+    {
+    "infinitive": "tritt",
+    "prateritumForm": "trat",
+    "perfektForm": "hat getreten",
+    "translate": "пинать, наступать"
+    },
+    {
+    "infinitive": "trinken",
+    "prateritumForm": "trank",
+    "perfektForm": "hat getrunken",
+    "translate": "пить"
+    },
+    {
+    "infinitive": "vergessen",
+    "prateritumForm": "vergaß",
+    "perfektForm": "hat vergessen",
+    "translate": "забывать"
+    },
+    {
+    "infinitive": "verlieren",
+    "prateritumForm": "verlor",
+    "perfektForm": "hat verloren",
+    "translate": "терять"
+    },
+    {
+    "infinitive": "verstehen",
+    "prateritumForm": "verstand",
+    "perfektForm": "hat verstanden",
+    "translate": "понимать"
+    },
+    {
+    "infinitive": "vorschlagen",
+    "prateritumForm": "schlug vor",
+    "perfektForm": "hat vorgeschlagen",
+    "translate": "предлагать"
+    },
+    {
+    "infinitive": "wachsen",
+    "prateritumForm": "wuchs",
+    "perfektForm": "ist gewachsen",
+    "translate": "расти"
+    },
+    {
+    "infinitive": "waschen",
+    "prateritumForm": "wusch",
+    "perfektForm": "hat gewaschen",
+    "translate": "мыть"
+    },
+    {
+    "infinitive": "weisen",
+    "prateritumForm": "wies",
+    "perfektForm": "hat gewiesen",
+    "translate": "указывать"
+    },
+    {
+    "infinitive": "werden",
+    "prateritumForm": "wurde",
+    "perfektForm": "ist geworden",
+    "translate": "становиться"
+    },
+    {
+    "infinitive": "wiegen",
+    "prateritumForm": "wog",
+    "perfektForm": "hat gewogen",
+    "translate": "вешать (о весе)"
+    },
+    {
+    "infinitive": "winden",
+    "prateritumForm": "wand",
+    "perfektForm": "hat gewunden",
+    "translate": "крутить"
+    },
+    {
+    "infinitive": "wissen",
+    "prateritumForm": "wusste",
+    "perfektForm": "hat gewusst",
+    "translate": "знать"
+    },
+    {
+    "infinitive": "ziehen",
+    "prateritumForm": "zog",
+    "perfektForm": "hat gezogen",
+    "translate": "тянуть"
+    },
+    {
+    "infinitive": "zwingen",
+    "prateritumForm": "zwang",
+    "perfektForm": "hat gezwungen",
+    "translate": "заставлять"
+    }
+    ]
