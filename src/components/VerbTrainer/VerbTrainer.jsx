@@ -16,13 +16,14 @@ export default function VerbTrainer() {
   const [feedback, setFeedback] = useState("");
 
   useEffect(() => {
-    axios.get("/verbs.json")
+    axios.get("http://localhost:3001/verbs")
       .then((response) => {
         dispatch(setVerbs(response.data));
-        dispatch(setCurrentVerb());
+        dispatch(setCurrentVerb(response.data));  // Передаём список
       })
       .catch((error) => console.error("Ошибка загрузки глаголов", error));
   }, [dispatch]);
+  
 
   const checkAnswer = () => {
     if (!currentVerb) return;
