@@ -16,7 +16,7 @@ export default function VerbTrainer() {
   const [feedback, setFeedback] = useState("");
 
   useEffect(() => {
-    axios.get("/vite-myProject/public/verbs.json") // Загружаем JSON из public
+    axios.get("./verbs.json") // Загружаем JSON из public
       .then((response) => {
         dispatch(setVerbs(response.data));
         dispatch(setCurrentVerb());
