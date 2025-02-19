@@ -16,7 +16,7 @@ export default function VerbTrainer() {
   const [feedback, setFeedback] = useState("");
 
   useEffect(() => {
-    axios.get("http://localhost:3001/verbs")
+    axios.get("http://localhost:3001.com/verbs")
       .then((response) => {
         dispatch(setVerbs(response.data));
         dispatch(setCurrentVerb());
