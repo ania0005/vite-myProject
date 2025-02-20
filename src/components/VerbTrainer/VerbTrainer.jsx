@@ -2,15 +2,15 @@ import React, { useEffect, useState } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import axios from "axios";
 import { setVerbs, setCurrentVerb } from "../../features/verbTrainerSlice";
-import { Button, Input, InputBase, InputLabel, TextField} from "@mui/material";
+import { Button, InputBase} from "@mui/material";
 import styled from "styled-components";
-import { INPUT } from "@blueprintjs/core/lib/esm/common/classes";
-import { InputGroup } from "@blueprintjs/core";
+
+
 
 const Styles = styled.div`
   .main {
     width: 100%;
-    max-width: 400px;
+    max-width: 500px;
     margin: 80px auto;
     display: flex;
     flex-direction: column;
@@ -23,16 +23,34 @@ const Styles = styled.div`
 
   .title {
     margin-bottom: 30px;
-    font-size: 32px;
+    font-size: 46px;
     font-weight: bold;
-    color: #3f51b5;
-    
+    color: #3f51b5;    
     text-align: center;
   }
 
   .input {
     width: 100%;
-    font-size: 18px;
+    font-size: 36px;
+    color: #333;
+    background: #f4f4f4;
+    border: none;
+    border-radius: 8px;
+    padding: 12px;
+    margin-bottom: 12px;
+    transition: all 0.3s ease;
+    
+  }
+
+  .input:focus {
+    background: #fff;
+    box-shadow: 0 0 8px rgba(63, 81, 181, 0.4);
+    outline: none;
+     
+  }
+  .btn-text {
+    width: 100%;
+    font-size: 20px;
     color: #333;
     background: #f4f4f4;
     border: none;
@@ -41,16 +59,9 @@ const Styles = styled.div`
     margin-bottom: 12px;
     transition: all 0.3s ease;
   }
-
-  .input:focus {
-    background: #fff;
-    box-shadow: 0 0 8px rgba(63, 81, 181, 0.4);
-    outline: none;
-  }
-
   .btn {
     width: 100%;
-    font-size: 18px;
+    font-size: 20px;
     font-weight: bold;
     color: #fff;
     background: linear-gradient(135deg, #3f51b5, #1a237e);
@@ -69,7 +80,7 @@ const Styles = styled.div`
 
   .feedback {
     margin-top: 15px;
-    font-size: 16px;
+    font-size: 22px;
     font-weight: bold;
     text-align: center;
     color: #d32f2f;
@@ -81,7 +92,8 @@ export default function VerbTrainer() {
   const dispatch = useDispatch();
   const verbs = useSelector((state) => state.verbTrainer.verbs);
   const currentVerb = useSelector((state) => state.verbTrainer.currentVerb);
-
+const [value, setValue] = useState('Übersetzung ansehen'); 
+ const [isCorrect, setIsCorrect] = useState(null);   
   const [inputValues, setInputValues] = useState({
     perfektForm: "",
     prateritumForm: "",
@@ -101,18 +113,17 @@ export default function VerbTrainer() {
 
   const checkAnswer = () => {
     if (!currentVerb) return;
-    const isCorrect =
-      inputValues.perfektForm.toLowerCase() ===
-        currentVerb.perfektForm.toLowerCase() &&
-      inputValues.prateritumForm.toLowerCase() ===
-        currentVerb.prateritumForm.toLowerCase() &&
-      inputValues.translate.toLowerCase() ===
-        currentVerb.translate.toLowerCase();
-
+    
+    const isCorrectNow =
+      inputValues.perfektForm.toLowerCase() === currentVerb.perfektForm.toLowerCase() &&
+      inputValues.prateritumForm.toLowerCase() === currentVerb.prateritumForm.toLowerCase();
+  
+    setIsCorrect(isCorrectNow); 
+  
     setFeedback(
-      isCorrect
-        ? "Верно!"
-        : `Ошибка, правильный ответ: ${currentVerb.perfektForm}, ${currentVerb.prateritumForm}, ${currentVerb.translate}`
+      isCorrectNow
+        ? `✅ ${currentVerb.prateritumForm}, ${currentVerb.perfektForm}`
+        : `❌ ${currentVerb.prateritumForm}, ${currentVerb.perfektForm}`
     );
   };
 
@@ -144,24 +155,19 @@ export default function VerbTrainer() {
               }
               className="input"
             />
-            <InputBase
-              type="text"
-              style={{ marginBottom: "30px" }}
-              placeholder="Übersetzung / russ"
-              value={inputValues.translate}
-              onChange={(e) =>
-                setInputValues({ ...inputValues, translate: e.target.value })
-              }
-              className="input"
-            />
+            <Button
+            onClick={() => {setValue(currentVerb.translate)}} className="btn-text"
+            >{value}</Button>
+            
             <Button onClick={checkAnswer} className="btn">
-              Проверить
+            Überprüfen
             </Button>
             
             <Button
               onClick={() => {
                 dispatch(setCurrentVerb());
                 setFeedback("");
+                setValue('Übersetzung ansehen');  
                 setInputValues({
                   perfektForm: "",
                   prateritumForm: "",
@@ -170,9 +176,11 @@ export default function VerbTrainer() {
               }}
               className="btn"
             >
-              Следующий
+              Nächste
             </Button>
-            <p className="mt-2 text-lg font-semibold text-center">{feedback}</p>
+            <p className="feedback" style={{ color: isCorrect ? "green" : "red" }}>
+            {feedback}
+</p>
           </div>
         )}
       </div>
