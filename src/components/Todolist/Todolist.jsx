@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import styled from "styled-components";
 import { dellItem, saveItem } from '../../features/todoListSlice';
+import { TextArea } from '@blueprintjs/core';
 
 
 const Styles = styled.div`
@@ -66,8 +67,8 @@ h1 {
   padding: 20px;
   border-radius: 8px;
   text-align: center;
-  width: 90%;
-  max-width: 400px;
+  width: 100%;
+  max-width: 800px;
 }
 
 .modal-content input {
@@ -189,14 +190,15 @@ function Todolist() {
           {isAddingTask && (
             <div className="modal">
               <div className="modal-content">
-                <input
+                <TextArea
                   type="text"
                   placeholder="Enter task text"
                   value={newTaskText}
+                  style={{ width: "100%" }}
                   onChange={(e) => setNewTaskText(e.target.value)}
                 />
-                <button onClick={handleSaveTask}>Spanden</button>
-                <button onClick={() => setIsAddingTask(false)}>Ab rechnen</button>
+                <div><button onClick={handleSaveTask}>Speichern</button>
+                <button onClick={() => setIsAddingTask(false)}>Abbrechen</button></div>
               </div>
             </div>
           )}
