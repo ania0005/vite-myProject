@@ -197,8 +197,8 @@ function Todolist() {
                   style={{ width: "100%" }}
                   onChange={(e) => setNewTaskText(e.target.value)}
                 />
-                <div><button onClick={handleSaveTask}>Speichern</button>
-                <button onClick={() => setIsAddingTask(false)}>Abbrechen</button></div>
+                <div><button onClick={handleSaveTask}>Save</button>
+                <button onClick={() => setIsAddingTask(false)}>Cancel</button></div>
               </div>
             </div>
           )}
