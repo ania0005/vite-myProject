@@ -14,6 +14,7 @@ const Popover = ({ onCancel, onSave }) => {
 
   return (
     <Dialog
+    className="dialog"
       isOpen={true}
       title="Neuer Termin"
       icon="info-sign"

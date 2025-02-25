@@ -39,6 +39,14 @@ const Styles = styled.div`
   border: 1px solid #6c757d;
   background-color: #e0e0e0;
 }
+@media (max-width: 1024px) {
+  
+  .container {
+    width: 300px;
+    height: 300px;
+    margin-top: 50px;
+  }
+}
 `;
 
 const Kacheln = () => {

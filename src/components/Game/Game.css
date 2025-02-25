@@ -1,105 +1,146 @@
+/* Общие стили */
 .main-container-game {
-    display: flex;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background-color: #ffffff;
+}
+
+.header-container {
+  width: 100%;
+  background-color: #7bc1f3;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.playerBtn {
+  margin: 10px 0;
+  min-width: 200px;
+  min-height: 100px;
+  text-align: center;
+  border-radius: 5px;
+  background-color: #0077cc;
+  color: white;
+  font-size: 25px;
+}
+
+.game-container {
+  width: 100%;
+  background-color: #f8f9fa;
+  min-height: 850px;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+.actionButtons {
+  background: #f8f9fa;
+  justify-content: center;
+  display: flex;
+  gap: 10px;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.actionBtn {
+  margin: 10px 0;
+  width: 200px;
+  min-height: 50px;
+  text-align: center;
+  border-radius: 5px;
+  background-color: #0077cc;
+  color: white;
+  font-size: 18px;
+}
+.game{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+ 
+}
+.game-field-container {
+  width: 450px;
+  margin: auto;
+  margin-top: 80px;
+  background-color: #ffffff;
+  display: flex;
+  flex-wrap: wrap;
+  border-radius: 8px;
+}
+
+.game-field-container .element {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 150px;
+  height: 150px;
+  border: 1px solid #ced4da;
+  background-color: #f0f0f0;
+}
+.winner-message {
+  position: absolute;
+  color: #080bcf;
+  font-size: 24px;
+} 
+/* Адаптация для планшетов (до 1024px) */
+@media (max-width: 1024px) {
+  .header-container {
     flex-direction: column;
     align-items: center;
-    padding: 20px;
-    background-color: #ffffff;
+    padding: 15px;
   }
-  
-  .player-main-header {
-    height: 100%;
-    background: #f8f9fa;
-    border: 1px solid #dee2e6;
-    border-radius: 8px;
+  .game-field-container {
+    width: 360px;
   }
-  
-  .header-container {
-    width: 100%;
-    background-color: #7bc1f3;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    padding: 20px;
-    border-radius: 8px;
+  .game-field-container .element {
+    width: 120px;
+    height: 120px;
   }
-  
+}
+
+/* Адаптация для мобильных устройств (до 768px) */
+@media (max-width: 768px) {
   .playerBtn {
-    margin: 10px 0;
-    min-width: 200px;
-    min-height: 100px;
-    text-align: center;
-    border-radius: 5px;
-    background-color: #0077cc;
-    color: white;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    font-size: 25px;
+    min-width: 150px;
+    min-height: 80px;
+    font-size: 20px;
   }
-  
-  .game-container {
-    width: 100%;
-    background-color: #f8f9fa;
-    min-height: 850px;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.1);
+  .game-field-container {
+    width: 300px;
   }
-  
-  .actionButtons {
-    background: #f8f9fa;
-    justify-content: center;
-    display: flex;
-    gap: 10px;
+  .game-field-container .element {
+    width: 100px;
+    height: 100px;
+  }
+}
+
+/* Адаптация для маленьких экранов (до 480px) */
+@media (max-width: 480px) {
+  .header-container {
+    flex-direction: column;
     padding: 10px;
-    border-radius: 8px;
   }
-  
-  .actionBtn {
-    margin: 10px 0;
-    width: 200px;
-    min-height: 50px;
-    text-align: center;
-    border-radius: 5px;
-    background-color: #0077cc;
-    color: white;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  .playerBtn {
+    min-width: 120px;
+    min-height: 60px;
     font-size: 18px;
   }
-  
-  .game {
-    background: #e9ecef;
-    border-radius: 8px;
-    padding: 20px;
-    height: 900px;
-  }
-  
   .game-field-container {
-    width: 450px;
-    margin: auto;
-    margin-top: 100px;
-    background-color: #ffffff;
-    display: flex;
-    flex-wrap: wrap;
-    border-radius: 8px;
+    width: 240px;
   }
-  
   .game-field-container .element {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    width: 80px;
+    height: 80px;
+  }
+  .actionBtn {
     width: 150px;
-    height: 150px;
-    border: 1px solid #ced4da;
-    background-color: #f0f0f0;
+    min-height: 40px;
+    font-size: 16px;
   }
-  
-  .winner-message {
-    position: absolute;
-    top: 280px;
-    left: 50%;
-    transform: translateX(-50%);
-    font-size: 24px;
-    font-weight: bold;
-    color: #0077cc;
-    padding: 10px 20px;
-  }
+}
+
   

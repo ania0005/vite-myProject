@@ -45,3 +45,60 @@
     background-color: #e91c1c;
     border-color: #e91c1c;
   }
+
+  /* Для планшетов (до 1024px) */
+@media (max-width: 1024px) {
+  .Square button {
+    width: 5vh;
+    height: 5vh;
+    margin: 0.3vh;
+  }
+
+  .Status .start-button {
+    font-size: 4vh;
+    padding: 1.5vh 4vh;
+  }
+}
+
+/* Для мобильных устройств (до 768px) */
+@media (max-width: 768px) {
+  .Board {
+    grid-template-columns: repeat(10, 1fr);
+    gap: 0.2vh;
+  }
+
+  .Square button {
+    width: 4vh;
+    height: 4vh;
+    margin: 0.2vh;
+  }
+
+  .Status .start-button {
+    font-size: 3.5vh;
+    padding: 1.2vh 3vh;
+  }
+}
+
+/* Для маленьких экранов (до 480px) */
+@media (max-width: 480px) {
+  .gameSnake {
+    font-size: calc(8px + 1.5vmin);
+    padding: 10px;
+  }
+
+  .Board {
+    grid-template-columns: repeat(10, 1fr);
+    gap: 0.1vh;
+  }
+
+  .Square button {
+    width: 3.5vh;
+    height: 3.5vh;
+    margin: 0.1vh;
+  }
+
+  .Status .start-button {
+    font-size: 3vh;
+    padding: 1vh 2.5vh;
+  }
+}

@@ -8,7 +8,7 @@ import Todolist from "./components/Todolist/Todolist";
 import GameSnake from "./components/GameSnake/GameSnake";
 import VerbTrainer from "./components/VerbTrainer/VerbTrainer";
 import MyStore from "./components/MyStore/MyStore";
-
+import "./App.css";
 
 const projects = [
   { name: "Weather", component: <Weather /> },
@@ -26,28 +26,22 @@ function App() {
 
   return (
     <div className="projectWrapper">
-     
-     <div className="projectBtns">
-     {projects.map((project) => {
+      <div className="projectBtns">
+        {projects.map((project) => {
           return (
             <Button
-              key={project.name} 
-              className="projectButn"
+              key={project.name}
+              className="projectBtn"
               text={project.name}
               onClick={() => {
                 setSelectedProject(project);
               }}
-              intent={
-                selectedProject.name === project.name
-                  ? "primary"
-                  : "none"
-              }
+              intent={selectedProject.name === project.name ? "primary" : "none"}
             />
           );
         })}
-     
-     </div>
-    
+      </div>
+
       <div className="projectWrapperContainer">{selectedProject.component}</div>
     </div>
   );

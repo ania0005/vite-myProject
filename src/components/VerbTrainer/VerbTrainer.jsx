@@ -2,10 +2,8 @@ import React, { useEffect, useState } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import axios from "axios";
 import { setVerbs, setCurrentVerb } from "../../features/verbTrainerSlice";
-import { Button, InputBase} from "@mui/material";
+import { Button, InputBase } from "@mui/material";
 import styled from "styled-components";
-
-
 
 const Styles = styled.div`
   .main {
@@ -25,7 +23,7 @@ const Styles = styled.div`
     margin-bottom: 30px;
     font-size: 46px;
     font-weight: bold;
-    color: #3f51b5;    
+    color: #3f51b5;
     text-align: center;
   }
 
@@ -39,14 +37,12 @@ const Styles = styled.div`
     padding: 12px;
     margin-bottom: 12px;
     transition: all 0.3s ease;
-    
   }
 
   .input:focus {
     background: #fff;
     box-shadow: 0 0 8px rgba(63, 81, 181, 0.4);
     outline: none;
-     
   }
   .btn-text {
     width: 100%;
@@ -68,7 +64,7 @@ const Styles = styled.div`
     border: none;
     border-radius: 8px;
     padding: 12px;
-    margin-bottom: 12px;  
+    margin-bottom: 12px;
     cursor: pointer;
     transition: all 0.3s ease;
   }
@@ -85,15 +81,26 @@ const Styles = styled.div`
     text-align: center;
     color: #d32f2f;
   }
+  @media (max-width: 1024px) {
+    .main {
+      width: 80%;
+      max-width: 350px;
+    }
+    .title {
+      font-size: 36px;
+    }
+    .input {
+      font-size: 26px;
+    }
+  }
 `;
-
 
 export default function VerbTrainer() {
   const dispatch = useDispatch();
   const verbs = useSelector((state) => state.verbTrainer.verbs);
   const currentVerb = useSelector((state) => state.verbTrainer.currentVerb);
-const [value, setValue] = useState('Übersetzung ansehen'); 
- const [isCorrect, setIsCorrect] = useState(null);   
+  const [value, setValue] = useState("Übersetzung ansehen");
+  const [isCorrect, setIsCorrect] = useState(null);
   const [inputValues, setInputValues] = useState({
     perfektForm: "",
     prateritumForm: "",
@@ -103,7 +110,7 @@ const [value, setValue] = useState('Übersetzung ansehen');
 
   useEffect(() => {
     axios
-      .get("./verbs.json") 
+      .get("./verbs.json")
       .then((response) => {
         dispatch(setVerbs(response.data));
         dispatch(setCurrentVerb());
@@ -113,13 +120,15 @@ const [value, setValue] = useState('Übersetzung ansehen');
 
   const checkAnswer = () => {
     if (!currentVerb) return;
-    
+
     const isCorrectNow =
-      inputValues.perfektForm.toLowerCase() === currentVerb.perfektForm.toLowerCase() &&
-      inputValues.prateritumForm.toLowerCase() === currentVerb.prateritumForm.toLowerCase();
-  
-    setIsCorrect(isCorrectNow); 
-  
+      inputValues.perfektForm.toLowerCase() ===
+        currentVerb.perfektForm.toLowerCase() &&
+      inputValues.prateritumForm.toLowerCase() ===
+        currentVerb.prateritumForm.toLowerCase();
+
+    setIsCorrect(isCorrectNow);
+
     setFeedback(
       isCorrectNow
         ? `✅ ${currentVerb.prateritumForm}, ${currentVerb.perfektForm}`
@@ -133,7 +142,7 @@ const [value, setValue] = useState('Übersetzung ansehen');
         {currentVerb && (
           <div className="main">
             <div className="title">{currentVerb.infinitive}</div>
-            
+
             <InputBase
               type="text"
               placeholder="Präteritum"
@@ -156,18 +165,23 @@ const [value, setValue] = useState('Übersetzung ansehen');
               className="input"
             />
             <Button
-            onClick={() => {setValue(currentVerb.translate)}} className="btn-text"
-            >{value}</Button>
-            
-            <Button onClick={checkAnswer} className="btn">
-            Überprüfen
+              onClick={() => {
+                setValue(currentVerb.translate);
+              }}
+              className="btn-text"
+            >
+              {value}
             </Button>
-            
+
+            <Button onClick={checkAnswer} className="btn">
+              Überprüfen
+            </Button>
+
             <Button
               onClick={() => {
                 dispatch(setCurrentVerb());
                 setFeedback("");
-                setValue('Übersetzung ansehen');  
+                setValue("Übersetzung ansehen");
                 setInputValues({
                   perfektForm: "",
                   prateritumForm: "",
@@ -178,9 +192,12 @@ const [value, setValue] = useState('Übersetzung ansehen');
             >
               Nächste
             </Button>
-            <p className="feedback" style={{ color: isCorrect ? "green" : "red" }}>
-            {feedback}
-</p>
+            <p
+              className="feedback"
+              style={{ color: isCorrect ? "green" : "red" }}
+            >
+              {feedback}
+            </p>
           </div>
         )}
       </div>
