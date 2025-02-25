@@ -103,7 +103,7 @@ const [value, setValue] = useState('Übersetzung ansehen');
 
   useEffect(() => {
     axios
-      .get("./verbs.json") // Загружаем JSON из public
+      .get("./verbs.json") 
       .then((response) => {
         dispatch(setVerbs(response.data));
         dispatch(setCurrentVerb());

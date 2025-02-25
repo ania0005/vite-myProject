@@ -1,17 +1,18 @@
-// src/components/weather/WeatherItems.jsx
 import React from "react";
 import WeatherItem from "./WeatherItem";
-import "../../index.css";
+import "./Weather.css";
+
 
 const WeatherItems = ({ selectedCities, onDelete }) => {
   return (
-    <div className="weather-content"> {/* Изменено на className="weather-content" */}
+    <div className="weather-content"> 
       {selectedCities.length > 0 ? (
         selectedCities.map((item) => (
-          <WeatherItem key={item.id} item={item} onDelete={onDelete} /> // Убедитесь, что у каждого элемента есть уникальный id
+          <WeatherItem key={item.id} item={item} onDelete={onDelete} /> 
         ))
       ) : (
-        <div>No cities added yet</div>
+        <div>Add a city
+</div>
       )}
     </div>
   );

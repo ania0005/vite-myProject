@@ -1,13 +1,13 @@
 import { Icon, Intent, ProgressBar, Spinner } from "@blueprintjs/core";
 import { useEffect, useState } from "react";
-import "../../index.css";
+import "./Weather.css";
 import { URL_END, URL_START } from "./Weather";
 
 const WeatherInfo = ({ item }) => {
   const [weatherData, setWeatherData] = useState({
-    temp: "Нет данных о температуре",
-    wind: "Нет данных о ветре",
-    weather: "Нет данных о погоде",
+    temp: "no data",
+    wind: "no data",
+    weather: "no data",
   });
   const [loading, setLoading] = useState(true);
   const [progress, setProgress] = useState(0);
@@ -29,7 +29,7 @@ const WeatherInfo = ({ item }) => {
 
           setWeatherData({ temp, wind, weather });
         } else {
-          console.log("Город не загружен");
+          console.log("City not found");
         }
         setLoading(false);
       } catch (error) {
@@ -68,7 +68,7 @@ const WeatherInfo = ({ item }) => {
         <div>
           <div className="item">
             <Icon icon="temperature" size={12} intent="primary" />
-            {weatherData.temp || "Нет данных о температуре"}
+            {weatherData.temp || "no data"}
             {tempValue !== null && tempValue < 15 ? (
               <Icon icon="snowflake" size={12} intent="primary" />
             ) : tempValue !== null && tempValue < 25 ? (
@@ -79,11 +79,11 @@ const WeatherInfo = ({ item }) => {
           </div>
           <div className="item">
             <Icon icon="wind" size={12} intent="primary" />{" "}
-            {weatherData.wind || "Нет данных о ветре"}
+            {weatherData.wind || "no data"}
           </div>
           <div className="item">
             <Icon icon="cloud" size={12} intent="primary" />{" "}
-            {weatherData.weather || "Нет данных о погоде"}
+            {weatherData.weather || "no data"}
           </div>
           <div className="item"style={{marginTop:"5px"}}>
             <ProgressBar intent="primary" value={progress} />

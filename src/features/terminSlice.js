@@ -11,7 +11,6 @@ const tempData = [
     birthdayDate: DateTime.now().toISO(),
     behandlung: "Ambulant",
   },
-  // other initial items
 ];
 
 

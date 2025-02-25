@@ -1,5 +1,5 @@
 import Square from "./Square";
-import "../../../App.css";  
+import "../GameSnake.css";
 
 function Board() {
   

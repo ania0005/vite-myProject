@@ -1,6 +1,7 @@
 import { Icon } from "@blueprintjs/core";
 import WeatherInfo from "./WeatherInfo";
-import "../../index.css";
+import "./Weather.css";
+
 
 const WeatherItem = ({ item, onDelete }) => {
   if (!item) {

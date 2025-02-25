@@ -1,0 +1,212 @@
+.weather-container {
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+    height: 100vh;
+  }
+  
+  .weather-header {
+    color: #6c757d;
+    padding: 0 10px;
+  }
+  
+  .select-button {
+    background-color: #0077cc;
+    color: white;
+    border-radius: 4px;
+    padding: 5px;
+    cursor: pointer;
+    border: none;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+  }
+  
+  .select-button:hover {
+    background-color: #005fa3;
+  }
+  
+  .weather-content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-items: flex-start;
+  }
+  
+  .itemCard {
+    background-color: #ffffff;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.05);
+    width: 250px;
+    height: 150px;
+    font-size: 14px;
+    color: #333;
+  }
+  
+  .itemCardHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #0077cc;
+  }
+  
+  .item .icon {
+    color: #6c757d;
+  }
+  .item {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: center;
+  }
+  .progress-bar {
+    width: 100%;
+    height: 10px;
+    border-radius: 4px;
+    background-color: #dee2e6;
+    margin-top: 8px;
+  }
+  
+  .progress-bar .progress {
+    height: 100%;
+    border-radius: 4px;
+    background-color: #0077cc;
+    transition: width 0.3s ease;
+  }
+  
+  .spinner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+  }
+  
+  /* Маленькие экраны (до 576px) */
+  @media (max-width: 576px) {
+    .weather-container {
+      flex-direction: column;
+      padding: 10px;
+      height: auto;
+    }
+  
+    .weather-header {
+      font-size: 16px;
+      text-align: center;
+      margin-bottom: 10px;
+    }
+  
+    .weather-content {
+      flex-direction: column;
+      gap: 10px;
+      align-items: center;
+    }
+  
+    .itemCard {
+      width: 80%;
+      height: auto;
+      padding: 10px;
+      font-size: 14px;
+    }
+  
+    .itemCardHeader {
+      font-size: 16px;
+      margin-bottom: 8px;
+    }
+  
+    .progress-bar {
+      margin-top: 8px;
+    }
+  
+    .progress-bar .progress {
+      height: 10px;
+    }
+  }
+  
+  /* Средние экраны (576px – 768px) */
+  @media (min-width: 577px) and (max-width: 768px) {
+    .weather-container {
+      flex-direction: column;
+      padding: 15px;
+      height: auto;
+    }
+  
+    .weather-header {
+      font-size: 18px;
+      text-align: center;
+      margin-bottom: 15px;
+    }
+  
+    .weather-content {
+      flex-direction: row;
+      flex-wrap: wrap;
+      gap: 15px;
+      justify-content: center;
+      text-align: start;
+    }
+  
+    .itemCard {
+      width: 0 auto;
+      height: auto;
+      padding: 12px;
+      font-size: 15px;
+    }
+  
+    .itemCardHeader {
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+  
+    .progress-bar {
+      margin-top: 10px;
+    }
+  
+    .progress-bar .progress {
+      height: 12px;
+    }
+  }
+  
+  /* Крупные экраны (768px – 1024px) */
+  @media (min-width: 769px) and (max-width: 1024px) {
+    .weather-container {
+      flex-direction: row;
+      justify-content: center;
+      padding: 20px;
+    }
+  
+    .weather-header {
+      font-size: 20px;
+      text-align: left;
+      margin-bottom: 20px;
+    }
+  
+    .weather-content {
+      flex-direction: row;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: start;
+    }
+  
+    .itemCard {
+      width: 45%;
+      height: auto;
+      padding: 15px;
+      font-size: 16px;
+    }
+  
+    .itemCardHeader {
+      font-size: 20px;
+      margin-bottom: 12px;
+    }
+  
+    .progress-bar {
+      margin-top: 12px;
+    }
+  
+    .progress-bar .progress {
+      height: 14px;
+    }
+  }

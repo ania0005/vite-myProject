@@ -7,6 +7,7 @@ import Kacheln from "./components/Kacheln/Kacheln";
 import Todolist from "./components/Todolist/Todolist";
 import GameSnake from "./components/GameSnake/GameSnake";
 import VerbTrainer from "./components/VerbTrainer/VerbTrainer";
+import MyStore from "./components/MyStore/MyStore";
 
 
 const projects = [
@@ -17,6 +18,7 @@ const projects = [
   { name: "TodoList", component: <Todolist /> },
   { name: "GameSnake", component: <GameSnake /> },
   { name: "VerbTrainer", component: <VerbTrainer /> },
+  { name: "MyStore", component: <MyStore /> },
 ];
 
 function App() {

@@ -13,7 +13,6 @@ export const weatherSlice = createSlice({
       state.items = action.payload;
     },
     addItem: (state, action) => {
-      // Проверка на уникальность перед добавлением
       if (!state.items.some((item) => item.title === action.payload.title)) {
         state.items.push(action.payload);
       }

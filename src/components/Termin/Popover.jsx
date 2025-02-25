@@ -1,5 +1,5 @@
 import "react-datepicker/dist/react-datepicker.css";
-import "../../index.css";
+import "./Termin.css";
 import TerminForm from "./TerminForm";
 import { Dialog, DialogBody } from "@blueprintjs/core";
 import { useDispatch, useSelector } from "react-redux";

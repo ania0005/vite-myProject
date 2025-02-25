@@ -1,16 +1,9 @@
 import React from "react";
-import "../../index.css";
+import "./Termin.css";
 import TerminForm from "./TerminForm";
-import styled from "styled-components";
 
-const Styles = styled.div`
-  .details-component {
-    width: 100%;
-  }
-  .title {
-    margin-bottom: 10px;
-  } 
-`;
+
+
 
 const Details = ({ selectedItem, onSave, onCancel, isEditing }) => {
   if (!selectedItem) return <div className="details-component">Details</div>;
@@ -18,7 +11,7 @@ const Details = ({ selectedItem, onSave, onCancel, isEditing }) => {
   console.log("Selected item in Details: ", selectedItem);
 
   return (
-    <Styles>
+    
       <div className="details-component">
         <div className="title">Details</div>
         <TerminForm
@@ -28,7 +21,7 @@ const Details = ({ selectedItem, onSave, onCancel, isEditing }) => {
           disableFields={!isEditing}
         />
       </div>
-    </Styles>
+   
   );
 };
 

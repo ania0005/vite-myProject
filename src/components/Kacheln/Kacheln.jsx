@@ -1,5 +1,5 @@
 import { useState } from "react";
-import "../../index.css";
+
 import styled from "styled-components";
 
 const Styles = styled.div`
@@ -10,11 +10,9 @@ const Styles = styled.div`
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background-color: #7696b6;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(3, 1fr);
-  gap: 0;
 }
 
 .element {
@@ -23,6 +21,8 @@ const Styles = styled.div`
   justify-content: center;
   width: 100%;
   height: 100%;
+  border: 1px solid #a2cef5;
+
 }
 
 .odd {

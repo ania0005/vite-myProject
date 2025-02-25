@@ -1,7 +1,8 @@
 import { useSelector, useDispatch } from "react-redux";
 import { changeStatus, moveSnake, setDirection, checkApple, checkGameOver} from "../../../features/gameSnakeSlice";
 import { useRef } from "react";
-import "../../../App.css";  
+import "../GameSnake.css";
+
 
 
 function Status() {

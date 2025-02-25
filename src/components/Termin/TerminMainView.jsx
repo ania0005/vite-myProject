@@ -10,38 +10,7 @@ import {
   editItem,
   updateItem,
 } from "../../features/terminSlice";
-import styled from "styled-components";
-
-const Styles = styled.div`
-  .terminMainView-component {
-    display: flex;
-    flex-direction: column;
-    padding: 20px 40px;
-    width: 100%;
-    .header {
-      width: 100%;
-    }
-    .main-container {
-      display: flex;
-      flex-direction: row;
-      justify-content: start;
-      gap: 50px;
-      padding: 10px;
-
-      .details {
-        flex: 1;
-        width: 100%;
-        padding: 10px;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-      }
-      .kunden-list {
-        flex:2;
-        width: 100%;
-        
-      }
-    }
-  }
-`;
+import "./Termin.css";
 
 const TerminMainView = () => {
   const dispatch = useDispatch();
@@ -95,38 +64,36 @@ const TerminMainView = () => {
     item.name?.toLowerCase().includes((sucheValue || "").toLowerCase())
   );
 
-  console.log("Filtered items:", filteredItems); // Проверяем результат фильтрации
+  console.log("Filtered items:", filteredItems);
 
   return (
-    <Styles>
-      <div className="terminMainView-component">
-        <div className="header">
-          <Header
-            onSucheChange={handleSucheChange}
-            onAddTermin={handleAddTermin}
+    <div className="terminMainView-component">
+      <div className="header">
+        <Header
+          onSucheChange={handleSucheChange}
+          onAddTermin={handleAddTermin}
+        />
+      </div>
+      <div className="main-container">
+        <div className="details">
+          <Details
+            selectedItem={selectedItem}
+            onSave={handleSave}
+            onCancel={handleCancel}
+            isEditing={isEditing}
           />
         </div>
-        <div className="main-container">
-          <div className="details">
-            <Details
-              selectedItem={selectedItem}
-              onSave={handleSave}
-              onCancel={handleCancel}
-              isEditing={isEditing}
-            />
-          </div>
-          <div className="kunden-list">
-            <KundenList
-              items={filteredItems}
-              sucheValue={sucheValue}
-              onItemClick={handleItemClick}
-              onEditItem={handleEditItem}
-              onDeleteItem={handleDeleteItem}
-            />
-          </div>
+        <div className="kunden-list">
+          <KundenList
+            items={filteredItems}
+            sucheValue={sucheValue}
+            onItemClick={handleItemClick}
+            onEditItem={handleEditItem}
+            onDeleteItem={handleDeleteItem}
+          />
         </div>
       </div>
-    </Styles>
+    </div>
   );
 };
 

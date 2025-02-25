@@ -1,0 +1,241 @@
+.header {
+    background-color: rgb(235, 234, 234);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px 5px;
+  }
+
+  .terminMainView-component {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 40px;
+    width: 100%;
+    .header {
+      width: 100%;
+    }
+    .main-container {
+      display: flex;
+      flex-direction: row;
+      justify-content: start;
+      gap: 50px;
+      padding: 10px;
+
+      .details {
+        flex: 1;
+        width: 100%;
+        padding: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+      .kunden-list {
+        flex:2;
+        width: 100%;
+        
+      }
+    }
+  }
+
+  .listItem {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    cursor: pointer;
+    height: 5px;
+    background-color: white;
+    padding: 10px ;
+    border: none;
+    outline: none;
+    box-shadow: none;
+  }
+.dataItem{
+  flex: 1;
+}
+  .listItem:nth-child(odd) {
+    background-color: #ffffff;
+  }
+
+  .listItem:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+
+  .listItem.selected {
+    background-color: #085295;
+    color: white;
+  }
+
+  .deleteItem {
+    cursor: pointer;
+    margin-bottom: 5px;
+  }
+
+  .form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  .buttons {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+  }
+
+
+@media (max-width: 1024px) {
+  .main-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    gap: 50px;
+    padding: 10px;
+  }
+  .header {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .details-component,
+  .kundenList-component {
+    flex: none;
+    width: 100%;
+    padding: 10px;
+  }
+
+  .listItem {
+    height: auto;
+    padding: 15px;
+  }
+
+  .itemData {
+    flex-direction: column;
+    gap: 10px;
+    align-items: flex-start;
+  }
+
+  .termin-form-component {
+    gap: 15px;
+  }
+
+  .buttons {
+    flex-direction: row;
+    gap: 10px;
+    justify-content: center;
+  }
+}
+
+/* Адаптация для мобильных устройств (до 768px) */
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 15px;
+  }
+  .main-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    gap: 50px;
+    padding: 10px;
+  }
+
+  .details-component {
+    flex: none;
+    width: 100%;
+    padding: 10px;
+  }
+
+  .kundenList-component {
+    flex: none;
+    width: 100%;
+    padding: 10px;
+  }
+
+  .listItem {
+    height: auto;
+    padding: 15px;
+  }
+
+  .itemData {
+    flex-direction: column;
+    gap: 10px;
+    align-items: flex-start;
+  }
+
+  .termin-form-component {
+    gap: 10px;
+  }
+
+  .buttons {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .input-group {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
+/* Адаптация для небольших мобильных устройств (до 480px) */
+@media (max-width: 480px) {
+  .header {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+  }
+
+  .main-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    gap: 50px;
+    padding: 10px;
+  }
+
+  .details-component {
+    flex: none;
+    width: 100%;
+    padding: 5px;
+   
+  }
+
+  .kundenList-component {
+    flex: none;
+    width: 100%;
+    padding: 5px;
+  }
+
+  .listItem {
+    height: auto;
+    padding: 10px;
+    font-size: 14px;
+  }
+
+  .itemData {
+    flex-direction: column;
+    gap: 8px;
+    align-items: flex-start;
+  }
+
+  .termin-form-component {
+    gap: 8px;
+  }
+
+  .buttons {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .input-group {
+    flex-direction: column;
+    gap: 8px;
+  }
+}

@@ -1,7 +1,6 @@
-// src/components/Game/GameField.jsx
 import { useDispatch, useSelector } from "react-redux";
 import { makeMove } from "../../features/gameSlice";
-import "../../index.css";
+import "./Game.css";
 
 const GameField = () => {
   const dispatch = useDispatch();

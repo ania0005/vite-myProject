@@ -11,8 +11,8 @@ export const todolistSlice = createSlice({
     saveItem: (state, action) => {
       if (action.payload.trim()) {
         state.items.push({
-          id: Math.random(), // Генерация уникального ID
-          text: action.payload, // Хранение текста задачи
+          id: Math.random(), 
+          text: action.payload, 
         });
       }
     },

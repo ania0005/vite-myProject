@@ -1,5 +1,6 @@
 import { useSelector } from "react-redux";
-import "../../../App.css";  
+import "../GameSnake.css";
+
 
 function Square({square}){
 

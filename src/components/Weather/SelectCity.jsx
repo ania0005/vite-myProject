@@ -1,7 +1,7 @@
 import { Button, Icon, MenuItem } from "@blueprintjs/core";
 import { Select } from "@blueprintjs/select";
 import { useState } from "react";
-import "../../index.css";
+import "./Weather.css";
 import { URL_END, URL_START } from "./Weather";
 
 const citiesData = [
@@ -90,7 +90,7 @@ roleStructure="listoption"
         style={{ backgroundColor: "#0077cc", color: "white" }}
           className="select-button"
           text={"Select city"}
-          rightIcon={<Icon icon="caret-down" style={{ color: "white" }} />} /* Здесь задаем белый цвет для иконки */
+          rightIcon={<Icon icon="caret-down" style={{ color: "white" }} />} 
   intent="none"
         />
       </Select>
