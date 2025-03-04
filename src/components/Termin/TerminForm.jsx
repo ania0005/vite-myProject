@@ -128,7 +128,7 @@ const TerminForm = ({ onCancel }) => {
       </Select>
       <div className="buttons">
         <Button variant="contained" color="primary" onClick={handleSave}>
-          OK
+          Speichern
         </Button>
         <Button variant="outlined" color="secondary" onClick={onCancel}>
           Abbrechen

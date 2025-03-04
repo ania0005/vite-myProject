@@ -3,16 +3,8 @@ import { useSelector } from "react-redux";
 import { DateTime } from "luxon";
 import "./Termin.css";
 
-const KundenList = ({
-  items,
-  onItemClick,
-  onEditItem,
-  onDeleteItem,
-  sucheValue,
-}) => {
-  const selectedItem = useSelector(
-    (state) => state.termins.selectedItem || null
-  );
+const KundenList = ({ items, onItemClick, onEditItem, onDeleteItem, sucheValue }) => {
+  const selectedItem = useSelector((state) => state.termins.selectedItem || null);
 
   const handleItemClick = (item) => {
     onItemClick(item);
@@ -24,45 +16,32 @@ const KundenList = ({
       item.name.toLowerCase().includes((sucheValue || "").toLowerCase())
   );
 
-  const formatDate = (date) => {
-    return DateTime.fromISO(date).toFormat("dd-MM-yyyy");
-  };
-
-  const formatTime = (time) => {
-    return DateTime.fromISO(time).toFormat("HH:mm");
-  };
+  const formatDate = (date) => (date ? DateTime.fromISO(date).toFormat("dd-MM-yyyy") : "—");
+  const formatTime = (time) => (time ? DateTime.fromISO(time).toFormat("HH:mm") : "—");
 
   return (
     <div>
       {filteredItems.length > 0 ? (
         filteredItems.map((item) => (
           <div
-            className={`listItem ${
-              selectedItem && item.id === selectedItem.id ? "selected" : ""
-            }`}
+            className={`listItem ${selectedItem && item.id === selectedItem.id ? "selected" : ""}`}
             key={item.id}
             onClick={() => handleItemClick(item)}
           >
-            <div className="dataItem">{item.name}</div>
-            {item.terminDate && (
-              <div className="dataItem">
-                Termin: {formatDate(item.terminDate)}
-              </div>
-            )}
-
-            {item.birthdayDate && (
-              <div className="dataItem">
-                Birthday Date: {formatDate(item.birthdayDate)}
-              </div>
-            )}
-            {item.terminTime && (
-              <div className="dataItem">
-                Terminszeit: {formatTime(item.terminTime)}
-              </div>
-            )}
+            <div className="dataItem">{item.name || "—"}</div>
+            <div className="dataItem">
+              <span className="label">Termin:</span> {formatDate(item.terminDate)}
+            </div>
+            <div className="dataItem">
+              <span className="label">Geburtsdatum:</span> {formatDate(item.birthdayDate)}
+            </div>
+            <div className="dataItem">
+              <span className="label">Terminszeit:</span> {formatTime(item.terminTime)}
+            </div>
             <div
               className="deleteItem"
               onClick={(e) => {
+                e.stopPropagation();
                 onDeleteItem(item.id);
               }}
             >
@@ -78,3 +57,4 @@ const KundenList = ({
 };
 
 export default KundenList;
+

@@ -35,7 +35,7 @@ const Header = ({ onSucheChange, onAddTermin }) => {
       <Button
         className="button-newTermin"
         onClick={handleAddTermin}
-        text="New Termin"
+        text="Neuer Termin"
       />
       <InputGroup
         className="input"

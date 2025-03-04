@@ -1,11 +1,14 @@
-import React from 'react'
-import Navbar from './Navbar'
-import "../../../tailwind.css"
+import React from "react";
+
+import Header_top from "./components/Header_top";
+
 
 const MyStore = () => {
   return (
-    <div><Navbar /></div>
-  )
-}
+    <div>
+      <Header_top  />
+    </div>
+  );
+};
 
-export default MyStore
+export default MyStore;

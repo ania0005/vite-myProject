@@ -115,7 +115,7 @@ export default function VerbTrainer() {
         dispatch(setVerbs(response.data));
         dispatch(setCurrentVerb());
       })
-      .catch((error) => console.error("Ошибка загрузки глаголов", error));
+      .catch((error) => console.error("Error", error));
   }, [dispatch]);
 
   const checkAnswer = () => {

@@ -111,6 +111,8 @@ h1 {
 }
 
 ul {
+  display: flex;
+  flex-direction: column; 
   list-style-type: none;
   padding: 0;
 }

@@ -51,6 +51,9 @@
 .dataItem {
   flex: 1;
 }
+.label{
+  color: rgb(179, 178, 178);
+}
 .listItem:nth-child(odd) {
   background-color: #ffffff;
 }

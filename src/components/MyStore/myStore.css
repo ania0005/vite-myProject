@@ -1,0 +1,44 @@
+.store-main-container{
+    background-color:black;
+    min-height: 100vh;
+    color: white;
+}
+.store-container{
+    max-width: 1390px;
+    margin: 0 auto;
+    padding: 0 15px;
+    min-height: 500px;
+    background-color: rgb(0, 0, 255, 0.475);
+    color: white;
+}
+a {
+    text-decoration: none;
+    color: #fff;
+  }
+  ul li {
+    list-style: none;
+  }
+  /* +++++++++++++++++++++HEADER-TOP++++++++++++++++++++++++++ */
+
+.header__top-row {
+    height: 114px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  ul {
+    display: flex;
+    gap: 30px;
+  }
+  
+  .logo {
+    margin-left: 230px;
+    margin-right: 488px;
+  }
+  .png-row {
+    display: flex;
+    gap: 40px;
+  }
+  .cursor {
+    cursor: pointer;
+  }
