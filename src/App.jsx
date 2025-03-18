@@ -18,6 +18,7 @@ const projects = [
   { name: "TodoList", component: <Todolist /> },
   { name: "GameSnake", component: <GameSnake /> },
   { name: "VerbTrainer", component: <VerbTrainer /> },
+  
   { name: "MyStore", component: <MyStore /> },
 ];
 
