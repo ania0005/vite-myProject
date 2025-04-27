@@ -1,5 +1,6 @@
 import { useSelector } from "react-redux";
-import "../GameSnake.css";
+import styles from "../GameSnake.module.css";
+
 
 
 function Square({square}){
@@ -16,8 +17,8 @@ for(let s of snake){
 
 if(x === apple.x &&  y === apple.y) buttonStyle = 'apple';
     return (
-        <span className="Square">
-<button className={buttonStyle}>
+        <span  className={styles.Square} >
+<button className={styles[buttonStyle]}>
 
 </button>
         </span>

@@ -1,5 +1,6 @@
 import Square from "./Square";
-import "../GameSnake.css";
+import styles from "../GameSnake.module.css";
+
 
 function Board() {
   
@@ -14,7 +15,7 @@ function Board() {
   
   console.log(squares[0].index);
   return (
-    <div className="Board">
+    <div className={styles.snakeBoard}>
       {squares.map(square => {
         return (
           <span key={square.index}>

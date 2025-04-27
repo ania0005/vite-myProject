@@ -1,4 +1,3 @@
-import React, { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import "./Game.css";
 import { Button } from "@blueprintjs/core";
@@ -24,7 +23,7 @@ const Header = () => {
         }}
         onClick={() => handleSelectFirstPlayer("X")}
       >
-        Set Player X
+        First player X
       </Button>
       <Button
         className="playerBtn"
@@ -34,7 +33,7 @@ const Header = () => {
         }}
         onClick={() => handleSelectFirstPlayer("O")}
       >
-        Set Player O
+        First player O
       </Button>
     </div>
   );

@@ -7,8 +7,9 @@ import Kacheln from "./components/Kacheln/Kacheln";
 import Todolist from "./components/Todolist/Todolist";
 import GameSnake from "./components/GameSnake/GameSnake";
 import VerbTrainer from "./components/VerbTrainer/VerbTrainer";
-import MyStore from "./components/MyStore/MyStore";
-import "./App.css";
+// import MyStore from "./components/MyStore/MyStore";
+
+
 
 const projects = [
   { name: "Weather", component: <Weather /> },
@@ -18,8 +19,7 @@ const projects = [
   { name: "TodoList", component: <Todolist /> },
   { name: "GameSnake", component: <GameSnake /> },
   { name: "VerbTrainer", component: <VerbTrainer /> },
-  
-  { name: "MyStore", component: <MyStore /> },
+ // { name: "MyStore", component: <MyStore /> },
 ];
 
 function App() {

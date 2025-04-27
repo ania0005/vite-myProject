@@ -2,7 +2,8 @@ import { useDispatch } from "react-redux";
 import { saveKey } from "../../features/gameSnakeSlice";
 import Board from "./components/Board";
 import Status from "./components/Status";
-import "./GameSnake.css";
+import styles from "./GameSnake.module.css";
+
 
 function GameSnake() {
   const dispatch = useDispatch();
@@ -11,7 +12,7 @@ function GameSnake() {
     dispatch(saveKey(event.key));
   };
   return (
-    <div className="gameSnake" onKeyDownCapture={keyDownHandler}>
+    <div className={styles.gameSnake} onKeyDownCapture={keyDownHandler}>
       <Board />
       <Status />
     </div>

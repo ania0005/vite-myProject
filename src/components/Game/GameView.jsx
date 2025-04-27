@@ -1,7 +1,7 @@
 import { Button } from "@blueprintjs/core";
 import { useDispatch, useSelector } from "react-redux";
 import GameField from "./GameField";
-import React, { useState } from "react";
+
 import "./Game.css";
 import Header from "./Header";
 import { resetGame } from "../../features/gameSlice";

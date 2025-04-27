@@ -11,18 +11,18 @@
   }
   
   /*Status*/
-  .Status .start-button{
+  .snakeStatus .startButton{
     background-color: #1b1b1b;
     border-color: white;
-    color: white;
+    color: white ;
     font-size: 5vh;
-    padding: 2vh 5vh;
+    padding: 2vh 3vh;
     border-radius: 1vh;
     margin-top: 5vh;
   }
   
   /*Board*/
-  .Board {
+  .snakeBoard {
     display: grid;
     grid-template-columns: repeat(10, 1fr);
   }
@@ -31,7 +31,7 @@
   .Square button {
     width: 6vh;
     height: 6vh;
-    background-color: #1b1b1b;
+    background-color: #353333;
     border-color: rgb(58, 58, 58);
     margin: 0.5vh;
   }
@@ -54,15 +54,16 @@
     margin: 0.3vh;
   }
 
-  .Status .start-button {
+  .snakeStatus .startButton {
     font-size: 4vh;
     padding: 1.5vh 4vh;
+
   }
 }
 
 /* Для мобильных устройств (до 768px) */
 @media (max-width: 768px) {
-  .Board {
+  .snakeBoard {
     grid-template-columns: repeat(10, 1fr);
     gap: 0.2vh;
   }
@@ -73,7 +74,7 @@
     margin: 0.2vh;
   }
 
-  .Status .start-button {
+  .snakeStatus .startButton {
     font-size: 3.5vh;
     padding: 1.2vh 3vh;
   }
@@ -86,7 +87,7 @@
     padding: 10px;
   }
 
-  .Board {
+  .snakeBoard {
     grid-template-columns: repeat(10, 1fr);
     gap: 0.1vh;
   }
@@ -97,7 +98,7 @@
     margin: 0.1vh;
   }
 
-  .Status .start-button {
+  .snakeStatus .startButton {
     font-size: 3vh;
     padding: 1vh 2.5vh;
   }

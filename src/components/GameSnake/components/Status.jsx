@@ -1,7 +1,7 @@
 import { useSelector, useDispatch } from "react-redux";
 import { changeStatus, moveSnake, setDirection, checkApple, checkGameOver} from "../../../features/gameSnakeSlice";
 import { useRef } from "react";
-import "../GameSnake.css";
+import styles from "../GameSnake.module.css";
 
 
 
@@ -32,8 +32,8 @@ function Status() {
     dispatch(changeStatus());
   };
   return (
-    <div className="Status">
-    <button className="start-button" onClick={clickHandler}>
+    <div className={styles.snakeStatus}>
+    <button className={styles.startButton} onClick={clickHandler}>
       {status}
     </button>
     </div>
