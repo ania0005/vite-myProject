@@ -1,4 +1,4 @@
-import React from "react";
+
 import WeatherItem from "./WeatherItem";
 import "./Weather.css";
 

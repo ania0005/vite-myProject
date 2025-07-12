@@ -1,4 +1,4 @@
-import React from "react";
+
 import { useDispatch, useSelector } from "react-redux";
 import { addItem, deleteItem } from "../../features/weatherSlice";
 import SelectCity from "./SelectCity";
