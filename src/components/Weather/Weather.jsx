@@ -1,4 +1,3 @@
-
 import { useDispatch, useSelector } from "react-redux";
 import { addItem, deleteItem } from "../../features/weatherSlice";
 import SelectCity from "./SelectCity";
@@ -6,7 +5,7 @@ import WeatherItems from "./WeatherItems";
 import "./Weather.css";
 
 export const URL_START = "https://wttr.in/";
-export const URL_END = "?format=%t+%w+%C&lang=de";
+export const URL_END = "?format=j1&lang=de";
 
 const Weather = () => {
   const dispatch = useDispatch();
@@ -29,6 +28,7 @@ const Weather = () => {
       <div className="weather-header">
         <SelectCity onItemSelect={handleAddSelectedCity} />
       </div>
+
       <div className="weather-items">
         <WeatherItems
           selectedCities={citiesWeather}
